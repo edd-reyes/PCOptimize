@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Optimization Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>PC Optimization Guide</h1>
+      <p>
+        This guide was made for the purpose of helping other PC enthusiast who
+        rocks <strong>AMD CPU and GPU</strong>. These guides are what I personally
+        do for my PC, starting from
+        <strong>BIOS settings to Windows installation to optimizing my system</strong>. This guide also
+        includes all the applications I use to further improve my system.
+      </p>
+      <h2>DISCLAIMER</h2>
+      <p>
+        <strong
+          >I DO NOT OWN ANY of the videos, photos and links included in
+          this guide.</strong
+        >
+        These are just the guides I used to help me optimize my system. Please
+        <strong>SUPPORT and FOLLOW</strong> the original creators as they help
+        build a better community for us PC enthusiasts.
+      </p>
+    </header>
+
+    <main>
+      <section id="content">
+        <section>
+          <h2>Contents</h2>
+          
+            <p><strong>PC Specs</strong></p>
+            <br>
+            <p><strong>BIOS Settings</strong></p>
+            
+              <p>
+                <a href="#curve-optimizer"
+                  >Ryzen CPU 7000 series Curve Optimizer</a
+                >
+              </p>
+              <p><a href="#XMP">XMP/EXPO</a></p>
+              <p><a href="#mcr">Memory Context Restore</a></p>
+              <p><a href="#rebar">Enable Smart Access Memory</a></p>
+            
+            <br>
+            <p><strong><a href="#win-inst"> Clean Windows Installation</a></strong></p>
+            <br>
+            <p><strong>Applications Used for Optimization</strong></p>
+            
+              <p>
+                <a href="#ctt"
+                  >Chris Titus Tech (CTT) Windows Optimization Tool</a
+                >
+              </p>
+              <p><a href="#pegasun">Pegasun System Utilities</a></p>
+            
+            <br>
+            <p><strong>Other PC Tweaks Guides</strong></p>
+            
+              <p><a href="#win-opt">Windows 11 Mega Optimization Guide</a></p>
+              <p><a href="#cache">How to Clear All Cache in Windows 11</a></p>
+            
+            <br>
+            <p><strong>Gaming Related Tweaks</strong></p>
+            
+              <p><a href="#mpo">Disable/Enable MPO</a></p>
+              <p><a href="#core-iso">Disable Core Isolation</a></p>
+              <p><a href="#power-plan">More Power Plan Options</a></p>
+              <p><a href="#chipset">Update Chipset Drivers</a></p>
+              <p><a href="#gpu">Update GPU drivers</a></p>
+            
+            <br>
+            <p><strong>General Purpose Applications</strong></p>
+            
+              <p><a href="#bcunst">BC Uninstaller</a></p>
+              <p><a href="#compactor">Compactor by Freaky</a></p>
+              <p><a href="#afterburner">MSI AfterBurner</a></p>
+              <p><a href="#superposition">Superposition Benchmark</a></p>
+              <p>
+                <a href="#everything">Everything Search App by Voidtools</a>
+              </p>
+            
+        </section>
+
+        <!-- PC SPECS -->
+        <section>
+          <h2>PC Specs</h2>
+          <p>Below is the specification of the rig used in this guide</p>
+          <ul>
+            <li>CPU: Ryzen 5 7600x</li>
+            <li>GPU: Sapphire Pulse RX6700XT 12GB</li>
+            <li>RAM: Corsair Vengeance 32GB(16x2) 6000Mhz 36CL</li>
+            <li>Motherboard: MSI B650M-P</li>
+            <li>PSU: 1STPlayer Steampunk 850W Gold Full Modular</li>
+            <li>SSD: 1TB Crucial P5 Plus</li>
+            <li>Cooler: Thermalright PS120 SE 7</li>
+          </ul>
+        </section>
+
+        <!-- BIOS SETTINGS -->
+
+        <section>
+          <!-- CURVE OPTIMIZER -->
+          <h2 id="bios-settings">BIOS Settings</h2>
+
+          <div id="curve-optimizer">
+            <h3>1. Ryzen CPU 7000 series Curve Optimizer</h3>
+            <p>To lower CPU temperature and reduce power.</p>
+            <iframe
+              src="https://www.youtube.com/embed/JTTf7IoVSa8"
+              title="How To Tune AM5 Ryzen 7000 Series Wattage &amp; Reduce Temps With Curve Optimiser PBO2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- ENABLE XMP Profile -->
+          <div id="XMP">
+            <h3>2. XMP/EXPO</h3>
+            <p>Improves RAM speed and timing based on the manufacturer's settings. Improves gaming performance.</p>
+            <p>
+              <em
+                ><strong>NOTE:</strong>Photo used only as an example to show
+                where in MSI BIOS settings is the XMP</em
+              >
+            </p>
+            <img src="Photos/msi-advanced-xmp-enabled.webp" alt="XMP guide" />
+          </div>
+
+          <div id="mcr">
+            <h3>3. Memory Context Restore</h3>
+            <p>Helps a lot to improve slow boot time specially on Ryzen 7000 CPUs.</p>
+            <iframe
+              src="https://www.youtube.com/embed/DXpzhpjkTjs"
+              title="How To Speed Up Slow AMD DDR5 Boot Times"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!-- SAM / REBAR -->
+          <div id="rebar">
+            <h3>4. Enable Smart Access Memory</h3>
+            <p>Allows the GPU to access more memory, enhancing Frames per Second (FPS) on most games.</p>
+            <iframe
+              src="https://www.youtube.com/embed/poI3Bg8qMhw"
+              title="How to ENABLE AMD Smart Access Memory | What do you need exactly?"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <!-- Clean Windows Installation -->
+        <section id="win-inst">
+          <h2>Clean Windows Installation</h2>
+          <p>A fresh install of Windows allows users to reduce the bloatware and unnecessary services running in the background.</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/6UQZ5oQg8XA"
+            title="The Perfect Windows 11 Install"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <!-- APPS USED -->
+        <section>
+          <h2>Applications used for Optimizing</h2>
+          <h3 id="ctt">1. Chris Titus Tech (CTT) Windows Optimization Tool</h3>
+          <p>A free windows utility tool to help tweak and optimize PC for better performance.</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/5_AaHXrelTE"
+            title="Windows Utility Improved for 2024"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3 id="pegasun">2. Pegasun System Utilities</h3>
+          <p>Another free utility tool same as CTT utilities. It has many options, from optimizing services to cleaning your PC of unnecessary junk.</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/OYXAhgFEARs"
+            title="Speed up Windows 10/11 PC for MAX performance | Top 2024 Secrets"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <!-- OTHER GUIDES -->
+        <section>
+          <h2>Other PC Tweaks Guides</h2>
+          <h3 id="win-opt">1. Windows 11 MEGA OPTIMIZATION Guide</h3>
+          <p>A guide to help you have a better, faster and more responsive windows experience.</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/AlX1vB7ItJc"
+            title="Windows 11 MEGA OPTIMIZATION Guide - Tips and tricks to speed up your PC!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3 id="cache">2. How to CLEAR All Cache in Windows 11</h3>
+          <p>Helps delete junk and unnecessary data to save memory space.</p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/yuUqJXuxdio"
+            title="🔧 How to CLEAR All Cache in Windows 11 to Improve Performance &amp; Speed Up ANY PC! (2024)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <!-- GAMING TWEAKS -->
+        <section>
+          <h2>Gaming Related Tweaks</h2>
+          <h3 id="mpo">1. Disable/Enable MPO</h3>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/fw_xv1Id6UM"
+            title="🔧 Changing this ONE SETTING could fix STUTTERS, Black screens and FLICKERING on YOUR PC ✅"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <h3 id="core-iso">2. Disable Core Isolation</h3>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/9rHwTN6U5cs"
+            title="I just found out this ONE SETTING is LOWERING your FPS... so I did some AMD &amp; NVIDIA Benchmarks"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <h3 id="power-plan">3. More Power Plan Options</h3>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/6XyTcGDd8i0"
+            title="Unlock these HIDDEN Windows 10 Features to ELIMINATE Stuttering on your GAMING PC!"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <h3 id="chipset">4. Update Chipset Drivers</h3>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/EWAzsDXC0KM"
+            title='"Inexplicable" STUTTERS on AMD? THESE may very well be the reason...'
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <h3 id="gpu">5. Update GPU Drivers</h3>
+          <p>
+            Update your GPU drivers (NVIDIA or AMD) by going to their official
+            website and downloading the latest driver for your GPU
+          </p>
+          <p>Links for drivers Official websites</p>
+          <ul>
+            <li>
+              <a href="https://www.amd.com/en/support/download/drivers.html"
+                >AMD Drivers</a
+              >
+            </li>
+            <li>
+              <a href="https://www.nvidia.com/download/index.aspx"
+                >NVIDIA Drivers</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <!-- GENERAL APPS -->
+        <section>
+          <h2>General Purpose Applications</h2>
+          <h3 id="bcunst">1. BC Uninstaller</h3>
+          <p>
+            This utility tool can be installed using CTT Utilities. This is for
+            uninstalling most apps that cannot be uninstalled using conventional
+            means.
+          </p>
+          <img src="/Photos/BCUninstaller.png" alt="BC Uninstaller" />
+
+          <h3 id="compactor">2. Compactor by Freaky</h3>
+          <p>
+            Used to compress game data without any effects on the games
+            performance. Saves precious space on your memory.
+          </p>
+          <p>
+            Link for <a href="https://github.com/Freaky/Compactor">Compactor</a>
+          </p>
+          <iframe
+            width="700"
+            height="400"
+            src="https://www.youtube.com/embed/WLLdXwZ8ujA"
+            title="🔧 How to FREE Up More than 50GB+ Of Disk Space by COMPRESSING Files in Windows 10, 8 or 7! 💾✔️"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <h3 id="afterburner">3. MSI AfterBurner</h3>
+          <p>
+            MSI AfterBurner is used for overclocking and undervolting GPUs. The
+            method and values used varies for each GPU. <p>This application also
+            installs <strong>RivaTuner Statistics Server (RTSS)</strong>. RTSS
+            allows you to set the frame limit for each game for better
+            frametime.</p>
+          </p>
+          <p>
+            Link for
+            <a href="https://www.msi.com/Landing/afterburner/graphics-cards"
+              >MSI AfterBurner</a
+            >
+          </p>
+          <img src="/Photos/afbr.jpg" alt="MSI Afterburner" />
+          <h3 id="superposition">4. Superposition Benchmark</h3>
+          <p>
+            Used to benchmark GPU specially if you are
+            overclocking/undervolting.
+          </p>
+          <p>
+            Link for
+            <a href="https://benchmark.unigine.com/superposition"
+              >Superposition Benchmark</a
+            >
+          </p>
+          <img src="/Photos/super.png" alt="Superposition" />
+
+          <h3 id="everything">5. Everything Search App by Voidtools</h3>
+          <p>
+            This search application can be installed using the CTT Utilities.
+            This application greatly enhances searching capabilities for
+            windows. Most useful when searching specific files.
+          </p>
+          <img
+            src="/Photos/Everything.Search.Window.png"
+            alt="Everything Search"
+          />
+        </section>
+
+        <section>
+          <h3 id="help">
+            Hope this guide helped you optimize your PC for better performance!
+          </h3>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p><em>All rights reserved @preyes1995</em></p>
+    </footer>
+  </body>
+</html>
